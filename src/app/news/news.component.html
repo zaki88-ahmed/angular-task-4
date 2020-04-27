@@ -1,0 +1,13 @@
+
+<div class="container" style="padding: 20px;">
+    <div class="row" style="background-color: aliceblue; padding: 20px;">
+      <div class="news" >
+        <div class="col-md-4" *ngFor="let n of allNews?.articles" style="border-bottom: #222 1px; display: block; float: left;">
+          <h2>{{n.title}}</h2>
+          <img [src]="n.urlToImage" class="img-fluid img-thumbnail">
+          <p>{{n.content}}</p>
+        </div>
+      </div>
+      
+    </div>
+</div>
